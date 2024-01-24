@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Rajdhani:wght@300&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        
+        
+<style>
+            *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.headcont{
+    width:100%;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    
+   
+}
+
+.cont {
+  width: 100%; 
+  grid-gap: 0rem;
+}
+.cont1 {
+  width: 100%;
+ 
+  
+}
+
+.gal {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 0rem; 
+  
+}
+
+
+.gal__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+ 
+}
+
+
+.gal__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  transition: transform .2s;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+
+.gal__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  transition: transform .2s;
+
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+
+.gal__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  transition: transform .2s;
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.gal__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  transition: transform .2s;
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.gal__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  transition: transform .2s;
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+
+.gal__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  transition: transform .2s;
+  
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+
+        .gal__item--7 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  transition: transform .2s;
+}
+
+.gal__item--8 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  transition: transform .2s;
+  
+}
+
+.gal__item--9 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  transition: transform .2s;
+  
+}
+
+.gal__item--10 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  transition: transform .2s;
+  
+}
+
+.gal__item--11 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  transition: transform .2s;
+ 
+}
+
+.gal__item--12 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  transition: transform .2s;
+
+}
+
+.gal__item--13 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 9;
+  transition: transform .2s;
+
+}
+.gal__item--14 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 9;
+  transition: transform .2s;
+
+}
+
+.gal__item--15 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  transition: transform .2s;
+
+}
+.gal__item--16 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  transition: transform .2s;
+
+}
+.gal__item--17 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  transition: transform .2s;
+
+}
+.gal__item--18 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  transition: transform .2s;
+
+}
+.gal__item--1:hover,.gal__item--2:hover,.gal__item--3:hover,.gal__item--4:hover,.gal__item--5:hover,.gal__item--6:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+        }
+
+.gal__item--7:hover, .gal__item--8:hover,.gal__item--9:hover,.gal__item--10:hover,.gal__item--11:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+        }
+
+        .gal__item--12:hover, .gal__item--13:hover,.gal__item--14:hover,.gal__item--15:hover,.gal__item--16:hover,.gal__item--17:hover,.gal__item--18:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+        }
+       
+        
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  position: fixed;
+  overflow: hidden;
+  /* background-color: #333; */
+  top: 0;
+  width: 100%;
+  height: 70px;
+ 
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* li a:hover:not(.active) {
+  background-color: #111;
+  text-decoration: underline;
+} */
+
+.active {
+ 
+  color: azure;
+}
+
+
+        </style>
+    </head>
+    <body style="background-color: #333;" >
+        <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/4EFt4UAegpqTy3nVce" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/trippy-gif-artist-ericaofanderson-4EFt4UAegpqTy3nVce"></a></p> -->
+      <header class="headcont" style="position: fixed; backdrop-filter: blur(30px); margin-top: -40px;">
+        
+           <div style="margin-left: 200px; width: 100%; height: 70px; "  >
+                <ul>
+                    <li>
+                        <a href="eventus_home.html" style="text-decoration: none;color: white;   font-family: 'Orbitron', sans-serif; font-weight: 400; margin-right: 100px; margin-left:0px;">Eventus</a>
+                      </li>
+                      <li>
+                        <a href="http://localhost/event/eventus_home.html">Home</a>
+                      </li>
+                      <li >
+                          <a href="http://localhost/event/services.html">Services</a>  
+                      </li>
+                      <li >
+                          <a href="http://localhost/event/gallery.html">Gallery</a>
+                      </li>
+                      <li >
+                          <a href="http://localhost/event/package.html" class="active active-first">Packages</a>
+                      </li>
+                      <li >
+                        <a href="http://localhost/event/signup.php">Login/Sign Up</a>
+                      </li>
+                      <li >         
+                        <a href="http://localhost/event/contact.php">contact</a>
+                      </li>
+                      <li >
+                        <a href="http://localhost/event/about.html">About Us</a>
+                      </li>
+                      <li >
+                        <a href="http://localhost/event/account.php">Account</a>
+                      </li>
+                </ul>
+              </div>
+              <!-- <h1 > <span><a href="eventus_home.html" style="text-decoration: none;color: white;   font-family: 'Orbitron', sans-serif; font-weight: 400;">Eventus</a>   </span> Gallery</h1>
+         -->
+             
+      </header>
+       
+<main style="margin-top: 40px;">
+    
+    <div class="cont">
+        <div class="gal">
+            <figure class="gal__item gal__item--1">
+                <img src="images/glry (1).jpg" alt="gal image 1" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--2">
+                <img src="images/glry (30).jpg" alt="gal image 2" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--3">
+                <img src="images/glry (32).jpg" alt="gal image 3" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--4">
+                <img src="images/glry (33).jpg" alt="gal image 4" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--5">
+                <img src="images/glry (6).jpg" alt="gal image 5" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--6">
+                <img src="images/glry (29).jpg" alt="gal image 6" class="gal__img">
+            </figure>
+        
+        </div>
+    </div>
+
+    <div class="cont1">
+    <div class="gal">
+        <figure class="gal__item gal__item--7">
+            <img src="images/glry (7).jpg" alt="gal image 7" class="gal__img">
+        </figure>
+        <figure class="gal__item gal__item--8">
+            <img src="images/glry (13).jpg" alt="gal image 8" class="gal__img">
+        </figure>
+        <figure class="gal__item gal__item--9">
+            <img src="images/glry (26).jpg" alt="gal image 9" class="gal__img">
+        </figure>
+        <figure class="gal__item gal__item--10">
+            <img src="images/glry (19).jpg" alt="gal image 10" class="gal__img">
+        </figure>
+        <figure class="gal__item gal__item--11">
+            <img src="images/glry (23).jpg" alt="gal image 11" class="gal__img">
+        </figure>
+        <figure class="gal__item gal__item--12">
+            <img src="images/glry (24).jpg" alt="gal image 12" class="gal__img">
+        </figure>
+    </div>
+    </div>
+
+    <div class="cont1">
+        <div class="gal">
+            <figure class="gal__item gal__item--13">
+                <img src="images/glry (20).jpg" alt="gal image 13" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--14">
+                <img src="images/glry (18).jpg" alt="gal image 14" class="gal__img">
+            </figure>
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="gal">
+            <figure class="gal__item gal__item--13">
+                <img src="images/glry (22).jpg" alt="gal image 15" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--14">
+                <img src="images/glry (25).jpg" alt="gal image 16" class="gal__img">
+            </figure>
+            
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="gal">
+            <figure class="gal__item gal__item--15">
+                <img src="images/glry (8).jpg" alt="gal image 15" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--16">
+                <img src="images/glry (6).jpg" alt="gal image 16" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--17">
+                <img src="images/glry (4).jpg" alt="gal image 15" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--18">
+                <img src="images/glry (2).jpg" alt="gal image 16" class="gal__img">
+            </figure>
+            
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="gal">
+            <figure class="gal__item gal__item--15">
+                <img src="images/pexels-ivan-samkov-8104206.jpg" alt="gal image 15" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--16">
+                <img src="images/pexels-hồng-xuân-viên-10568546.jpg" alt="gal image 16" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--17">
+                <img src="images/glry (17).jpg" alt="gal image 15" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--18">
+                <img src="images/glry (3).jpg" alt="gal image 16" class="gal__img">
+            </figure>
+            
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="gal">
+            <figure class="gal__item gal__item--13">
+                <img src="images/glry (28).jpg" alt="gal image 15" class="gal__img">
+            </figure>
+            <figure class="gal__item gal__item--14">
+                <img src="images/glry (27).jpg" alt="gal image 16" class="gal__img">
+            </figure>
+            
+        </div>
+        <div class="cont1">
+            <div class="gal">
+                <figure class="gal__item gal__item--13">
+                    <img src="images/glry (11).jpg" alt="gal image 15" class="gal__img">
+                </figure>
+                <figure class="gal__item gal__item--14">
+                    <img src="images/glry (9).jpg" alt="gal image 16" class="gal__img">
+                </figure>
+                
+            </div>
+            <div class="cont1">
+                <div class="gal">
+                    <figure class="gal__item gal__item--13">
+                        <img src="images/glry (16).jpg" alt="gal image 15" class="gal__img">
+                    </figure>
+                    <figure class="gal__item gal__item--14">
+                        <img src="images/pexels-hồng-xuân-viên-10568550.jpg" alt="gal image 16" class="gal__img">
+                    </figure>
+                    
+                </div>
+                <div class="cont1">
+                    <div class="gal">
+                        <figure class="gal__item gal__item--15">
+                            <img src="images/pexels-pavel-danilyuk-7180617.jpg" alt="gal image 15" class="gal__img">
+                        </figure>
+                        <figure class="gal__item gal__item--16">
+                            <img src="images/pexels-vlada-karpovich-7100342.jpg" alt="gal image 16" class="gal__img">
+                        </figure>
+                        <figure class="gal__item gal__item--17">
+                            <img src="images/glry (14).jpg" alt="gal image 15" class="gal__img">
+                        </figure>
+                        <figure class="gal__item gal__item--18">
+                            <img src="images/glry (35).jpg" alt="gal image 16" class="gal__img">
+                        </figure>
+                        
+                    </div>
+
+                    
+</main>
+       
+    </body>
+</html>
